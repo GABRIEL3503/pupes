@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería con Filtro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+   
+</head>
+<body>
+<section id="gallery">
+    <div class="filter-container">
+        <button data-filter="all" class="active">Todos</button>
+        <button data-filter="tattoo">Tattoo</button>
+        <button data-filter="murales">Murales</button>
+        <button data-filter="flora_y_fauna">Flora y Fauna</button>
+        <button data-filter="realismo">Realismo</button>
+        <button data-filter="blanco_y_negro">Blanco y Negro</button>
+        <button data-filter="infantil">Infantil</button>
+    </div>
+
+    <!-- Galería -->
+    <div class="gallery">
+        <div class="item tall" data-category="tattoo realismo">
+            <a href="img/imagen-1727403770227-461178268.jpeg" data-glightbox="title: Imagen 6; description: Descripción de la imagen 6">
+                <img src="img/Rectangle 16 (1).png" alt="Imagen 6">
+            </a>
+        </div>
+        <div class="item short" data-category="murales flora_y_fauna">
+            <a href="img/Rectangle 16 (2).png" data-glightbox="title: Imagen 4; description: Descripción de la imagen 4">
+                <img src="img/Rectangle 16 (2).png" alt="Imagen 4">
+            </a>
+        </div>
+        <div class="item tall" data-category="tattoo blanco_y_negro">
+            <a href="img/Rectangle 16.png" data-glightbox="title: Imagen 1; description: Descripción de la imagen 1">
+                <img src="img/Rectangle 16.png" alt="Imagen 1">
+            </a>
+        </div>
+        <div class="item short" data-category="murales infantil">
+            <a href="img/Rectangle 17 (1).png" data-glightbox="title: Imagen 2; description: Descripción de la imagen 2">
+                <img src="img/Rectangle 17 (1).png" alt="Imagen 2">
+            </a>
+        </div>
+        <div class="item short" data-category="realismo flora_y_fauna">
+            <a href="img/Rectangle 17 (2).png" data-glightbox="title: Imagen 4; description: Descripción de la imagen 4">
+                <img src="img/Rectangle 17 (2).png" alt="Imagen 4">
+            </a>
+        </div>
+        <div class="item short" data-category="blanco_y_negro murales">
+            <a href="img/Rectangle 17 (3).png" data-glightbox="title: Imagen 5; description: Descripción de la imagen 5">
+                <img src="img/Rectangle 17 (3).png" alt="Imagen 5">
+            </a>
+        </div>
+        <div class="item tall" data-category="tattoo infantil">
+            <a href="img/Rectangle 19.png" data-glightbox="title: Imagen 6; description: Descripción de la imagen 6">
+                <img src="img/Rectangle 19 (1).png" alt="Imagen 6">
+            </a>
+        </div>
+        <div class="item tall" data-category="murales flora_y_fauna">
+            <a href="img/Rectangle 21 (2).png" data-glightbox="title: Imagen 3; description: Descripción de la imagen 3">
+                <img src="img/Rectangle 21 (3).png" alt="Imagen 3">
+            </a>
+        </div>
+        <div class="item short" data-category="realismo tattoo">
+            <a href="img/imagen-1723929645309-590055579.jpg" data-glightbox="title: Imagen 2; description: Descripción de la imagen 2">
+                <img src="img/Rectangle 22 (1).png" alt="Imagen 2">
+            </a>
+        </div>
+        <div class="item tall" data-category="blanco_y_negro infantil">
+            <a href="img/Rectangle 22.png" data-glightbox="title: Imagen 3; description: Descripción de la imagen 3">
+                <img src="img/Rectangle 22.png" alt="Imagen 3">
+            </a>
+        </div>
+        <!-- Más imágenes -->
+    </div>
+</section>    
+<section class="parallax-section">
+
+    <div class="parallax-container">
+      <div class="parallax-content">
+     
+        <span  class="texto-sobre-transparencia">Viva a experiência do mundo de Pupe em 360°</span>
+
+    </div>
+    <button class="buuton-parallax">Entre</button>
+    </div>
+ </section>
+    <!-- Scripts de GLightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+ #gallery{
+  padding: 34px;
+
+}
+/* Configuración de la galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+
+
+/* Estilos básicos para las imágenes */
+.item {
+  position: relative;
+  opacity: 0; /* Comienza oculta */
+  transform: scale(0.95); /* Comienza ligeramente más pequeña */
+  transition: opacity 0.7s ease, transform 0.7s ease; /* Transición suave */
+  visibility: hidden; /* Oculta sin alterar el flujo de la galería */
+}
+
+.item.show {
+  opacity: 1; /* Totalmente visible */
+  transform: scale(1); /* Tamaño normal */
+  visibility: visible; /* Mostrar con transición */
+}
+
+/* Ajustes específicos para las tarjetas altas */
+.item.tall {
+  grid-row: span 2;
+}
+
+/* Estilos de las imágenes */
+.item img {
+  border-radius: 28px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Descripción interna de las tarjetas */
+.gdesc-inner {
+  width: 30%;
+  font-size: 21px;
+  color: white;
+  background-color: black;
+  margin-top: -168px;
+}
+
+/* Ajustes de estilo específicos para GLightbox */
+.glightbox-clean .gslide-description {
+  background-color: transparent;
+}
+
+.glightbox-clean .gslide-title {
+  font-size: 1em;
+  font-weight: 900;
+  font-family: Arial, sans-serif;
+  color: #ffffff !important;
+  margin-bottom: 19px;
+  line-height: 1.4em;
+}
+
+.gslide-desc {
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.4em;
+}
+
+/* Contenedor de botones de filtro */
+.filter-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-container button {
+  color: #AF45A7;
+  border: none;
+  background: none;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: font-weight 0.3s;
+}
+
+.filter-container button.active {
+  font-weight: 700;
+}
+/* CSS para animación visible en la galería */
+.gallery .item {
+  opacity: 0; /* Comienza completamente transparente */
+  transform: scale(0.8); /* Comienza mucho más pequeña */
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1); /* Transiciones más largas y visibles */
+  visibility: hidden; /* Oculta sin alterar el flujo de la galería */
+}
+
+.gallery .item.show {
+  opacity: 1; /* Completamente visible */
+  transform: scale(1); /* Tamaño normal */
+  visibility: visible; /* Mostrar con transición */
+}
+     
+.gallery .item {
+  display: none;
+}
+.gallery .item.show {
+  display: block;
+}
+
+
+
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179deg, rgb(0 0 0 / 8%) 0%, rgb(0 31 151 / 77%) 100%);
+  z-index: 1;
+}
+
+
+.parallax-container {
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.parallax-section {
+  margin: 48px 0px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./img/image.webp);
+  height: 400px;
+}
+
+.texto-sobre-transparencia {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem !important;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 4px;
+}
+
+.buuton-parallax{
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 12px;
+  color: white;
+  padding: 12px;
+  background-color: #AF45A7;
+}
